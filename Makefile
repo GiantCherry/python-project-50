@@ -10,5 +10,7 @@ package-install:
 lint:
 	uv run ruff check --fix gendiff
 
-gen-diff:
-	uv run gendiff --help
+gendiff:
+	uv run gendiff
+
+.PHONY: gendiff
